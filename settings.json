@@ -1,0 +1,81 @@
+{
+    "git.enableSmartCommit": true,
+    "git.countBadge": "tracked",
+    "python.linting.pep8Enabled": true,
+    "editor.rulers": [
+        79
+    ],
+    "breadcrumbs.enabled": true,
+    "window.menuBarVisibility": "default",
+    "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": -1,
+    "git.openDiffOnClick": false,
+
+    // Prettier minimap
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.maxColumn": 50,
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": true,
+
+    // Better title
+    "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+
+    // Editor settings
+    // "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.renderWhitespace": "none",
+    "editor.copyWithSyntaxHighlighting": false,
+
+    // Workbench settings
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "workbench.colorTheme": "Monokai Dimmed",
+    // Trailing Spaces config
+    "trailing-spaces.deleteModifiedLinesOnly": true,
+    "trailing-spaces.highlightCurrentLine": false,
+
+    // Autosave
+    "files.autoSave": "afterDelay",
+
+    //autoDocstring
+    "autoDocstring.customTemplatePath": "/ws/richcoop-sjc/misc/ensoft.mustache",
+    "gitlens.codeLens.enabled": false,
+
+    // Disable jedi
+    // "python.jediEnabled": false,
+
+    // Fix tagging
+    "python.workspaceSymbols.ctagsPath": "/auto/smartdev/bin/ctags",
+    "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**",
+                                                  "**tgt-linux/**",
+                                                  "**/*obj-*/**",
+                                                  "**link-lindt-64/**",
+                                                  "**xr-deps/**",
+                                                  "**enxr-xvm/**"],
+    "python.workspaceSymbols.rebuildOnFileSave": true,
+    "python.workspaceSymbols.rebuildOnStart": true,
+
+    "macros": {
+        "actuallyGoToFirstSymbol": [
+            "ctrl+t",
+            "acceptSuggestedSelectionOnEnter",
+        ],
+        "newBlockComment": [
+            {"command": "type", "args": {"text": "/*\n\n "}},
+            "cursorUp",
+            {"command": "type", "args": {"text": " * "}},
+            // {"command": "type", "args": {"text": "*"}},
+            // "cursorDown",
+            // {"command": "type", "args": {"text": "*/"}},
+            // "cursorUp",
+            // "deleteLeft",
+            // "cursorDown",
+            // "cursorRight"
+        ],
+    },
+    "workbench.colorCustomizations": {},
+
+}
